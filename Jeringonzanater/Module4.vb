@@ -4,7 +4,7 @@
     '''     if the word doesn't already contain "apa" or "Apa"
     ''' </summary>
     ''' <param name="strInputSentence" type="string">
-    '''     The sentence  to be Jeringozanated if valid
+    '''     The sentence to be Jeringozanated if valid
     ''' </param>
     ''' <returns type="string">
     '''     A string representing the sentence after Jeringozanation
@@ -22,8 +22,8 @@
         Dim strSentenceWords As String() = strInputSentence.Split(" ")
 
         ' Loop through each word using an index instead of a "For Each" loop
-        For i As UInt16 = 0 To strSentenceWords.Length - 1
-            Dim strWord = strSentenceWords(i)
+        For ui16 As UInt16 = 0 To strSentenceWords.Length - 1
+            Dim strWord = strSentenceWords(ui16)
 
             ' Check that the word contains "a" or "A"
             ' then ensure "apa" or "Apa" isn't already in the word
@@ -35,7 +35,7 @@
                     strWord = strWord.Replace("A", "Apa")
 
                     ' Replace the word in the list with the new converted word
-                    strSentenceWords(i) = strWord
+                    strSentenceWords(ui16) = strWord
                 End If
             End If
         Next

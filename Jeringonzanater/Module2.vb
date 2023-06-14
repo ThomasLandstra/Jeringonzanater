@@ -12,26 +12,27 @@
 
         ' Does the word contain "apa" or "Apa"?
         If InStr(strInput, "apa") Or InStr(strInput, "Apa") Then
-            ' The word contains "apa" or "Apa"
+            ' Turn input string into lowercase as all apa words are lowercase
+            Dim strLowerInput As String = strInput.ToLower
 
             ' Loop through every english word which contains "apa"/"Apa"
             For Each strWord In strApaWords
-                ' if the input word is an english word already containing apa
 
-                If strInput = strWord Then
+                ' if the input word is an english word already containing apa
+                If strLowerInput = strWord Then
 
                     ' Display result and exit sub
-                    MsgBox("Word is not Jeringonzanated")
+                    MsgBox(strInput & " is not Jeringonzanated")
                     Exit Sub
                 End If
             Next
 
             ' The word is not an english word containing apa
             ' Therefore it is Jeringonzanated
-            MsgBox("Word is Jeringonzanated")
+            MsgBox(strInput & " is Jeringonzanated")
         Else
             ' Word does not contain apa or "Apa"
-            MsgBox("Word is not Jeringonzanated")
+            MsgBox(strInput & " is not Jeringonzanated")
         End If
     End Sub
 End Module
