@@ -25,7 +25,7 @@ Partial Class formMain
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.tabControl = New System.Windows.Forms.TabControl()
         Me.tpgModule1 = New System.Windows.Forms.TabPage()
-        Me.btnMod1Check = New System.Windows.Forms.Button()
+        Me.btnMod1Convert = New System.Windows.Forms.Button()
         Me.rbtnMod1Unjeri = New System.Windows.Forms.RadioButton()
         Me.rbtnMod1Jeri = New System.Windows.Forms.RadioButton()
         Me.tbxMod1Input = New System.Windows.Forms.TextBox()
@@ -70,7 +70,7 @@ Partial Class formMain
         '
         'tpgModule1
         '
-        Me.tpgModule1.Controls.Add(Me.btnMod1Check)
+        Me.tpgModule1.Controls.Add(Me.btnMod1Convert)
         Me.tpgModule1.Controls.Add(Me.rbtnMod1Unjeri)
         Me.tpgModule1.Controls.Add(Me.rbtnMod1Jeri)
         Me.tpgModule1.Controls.Add(Me.tbxMod1Input)
@@ -82,15 +82,15 @@ Partial Class formMain
         Me.tpgModule1.Text = "Module 1"
         Me.tpgModule1.UseVisualStyleBackColor = True
         '
-        'btnMod1Check
+        'btnMod1Convert
         '
-        Me.btnMod1Check.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMod1Check.Location = New System.Drawing.Point(116, 441)
-        Me.btnMod1Check.Name = "btnMod1Check"
-        Me.btnMod1Check.Size = New System.Drawing.Size(160, 60)
-        Me.btnMod1Check.TabIndex = 5
-        Me.btnMod1Check.Text = "Check"
-        Me.btnMod1Check.UseVisualStyleBackColor = True
+        Me.btnMod1Convert.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMod1Convert.Location = New System.Drawing.Point(116, 441)
+        Me.btnMod1Convert.Name = "btnMod1Convert"
+        Me.btnMod1Convert.Size = New System.Drawing.Size(160, 60)
+        Me.btnMod1Convert.TabIndex = 5
+        Me.btnMod1Convert.Text = "Convert"
+        Me.btnMod1Convert.UseVisualStyleBackColor = True
         '
         'rbtnMod1Unjeri
         '
@@ -197,11 +197,11 @@ Partial Class formMain
         'btnMod4Verify
         '
         Me.btnMod4Verify.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMod4Verify.Location = New System.Drawing.Point(106, 416)
+        Me.btnMod4Verify.Location = New System.Drawing.Point(106, 438)
         Me.btnMod4Verify.Name = "btnMod4Verify"
-        Me.btnMod4Verify.Size = New System.Drawing.Size(180, 80)
+        Me.btnMod4Verify.Size = New System.Drawing.Size(180, 58)
         Me.btnMod4Verify.TabIndex = 7
-        Me.btnMod4Verify.Text = "Verify Candidacy"
+        Me.btnMod4Verify.Text = "Convert"
         Me.btnMod4Verify.UseVisualStyleBackColor = True
         '
         'tbxMod4Input
@@ -245,7 +245,7 @@ Partial Class formMain
     Friend WithEvents rbtnMod1Jeri As RadioButton
     Friend WithEvents btnMod2Check As Button
     Friend WithEvents tbxMod2Input As TextBox
-    Friend WithEvents btnMod1Check As Button
+    Friend WithEvents btnMod1Convert As Button
     Friend WithEvents btnMod3Verify As Button
     Friend WithEvents tbxMod3Input As TextBox
     Friend WithEvents btnMod4Verify As Button

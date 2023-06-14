@@ -21,7 +21,7 @@ Public Class formMain
     ''' <handles>
     '''     btnMod1Check.Click
     ''' </handles>
-    Private Sub btnMod1CheckClick(sender As Object, e As EventArgs) Handles btnMod1Check.Click
+    Private Sub btnMod1ConvertClick(sender As Object, e As EventArgs) Handles btnMod1Convert.Click
         ' Get the input string from the Module 1 input
         Dim strInput = tbxMod1Input.Text
 
@@ -36,10 +36,29 @@ Public Class formMain
     End Sub
 
 
-
     ' Module 2
 
     Private Sub btnMod2CheckClick(sender As Object, e As EventArgs) Handles btnMod2Check.Click
+        checkJering(tbxMod2Input.Text)
+    End Sub
+
+
+    'Module 3
+
+    Private Sub btnMod3VerifyClick(sender As Object, e As EventArgs) Handles btnMod3Verify.Click
+        Dim boolValidCandidate = verifyCandidacy(tbxMod3Input.Text)
+
+        If boolValidCandidate Then
+            MsgBox("Sentence is a valid candidate for Jeringonzanation")
+        Else
+            MsgBox("Sentence is not a valid candidate for Jeringonzanation")
+        End If
+    End Sub
+
+
+    ' Module 4
+
+    Private Sub btnMod4VerifyClick(sender As Object, e As EventArgs) Handles btnMod4Verify.Click
 
     End Sub
 End Class
