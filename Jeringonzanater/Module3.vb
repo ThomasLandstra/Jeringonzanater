@@ -1,4 +1,14 @@
 ﻿Module Module3
+    ''' <summary>
+    '''     A function to checks to see if input sentence has
+    '''     between 20% and 80% of words containing an "a" character
+    ''' </summary>
+    ''' <param name="strInputSentence" type="string">
+    '''     The input sentence to be checked
+    ''' </param>
+    ''' <returns type="bool">
+    '''     A boolean representing if the sentence is a valid candidate
+    ''' </returns>
     Public Function verifyCandidacy(strInputSentence As String) As Boolean
         ' Convert sentence to lowercase for ease of use
         strInputSentence = strInputSentence.ToLower()

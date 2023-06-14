@@ -5,7 +5,9 @@
     ''' <summary>
     '''     A subroutine to check wether or not a word has been Jeringonzanated
     ''' </summary>
-    ''' <param name="strInput" type="string">User word input</param>
+    ''' <param name="strInput" type="string">
+    '''     The word to be checked for Jeringonzanation
+    ''' </param>
     Public Sub checkJering(strInput As String)
 
         ' Does the word contain "apa" or "Apa"?

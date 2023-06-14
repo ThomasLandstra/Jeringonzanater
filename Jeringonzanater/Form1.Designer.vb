@@ -36,7 +36,7 @@ Partial Class formMain
         Me.btnMod3Verify = New System.Windows.Forms.Button()
         Me.tbxMod3Input = New System.Windows.Forms.TextBox()
         Me.tpgModule4 = New System.Windows.Forms.TabPage()
-        Me.btnMod4Verify = New System.Windows.Forms.Button()
+        Me.btnMod4Convert = New System.Windows.Forms.Button()
         Me.tbxMod4Input = New System.Windows.Forms.TextBox()
         Me.tabControl.SuspendLayout()
         Me.tpgModule1.SuspendLayout()
@@ -185,7 +185,7 @@ Partial Class formMain
         '
         'tpgModule4
         '
-        Me.tpgModule4.Controls.Add(Me.btnMod4Verify)
+        Me.tpgModule4.Controls.Add(Me.btnMod4Convert)
         Me.tpgModule4.Controls.Add(Me.tbxMod4Input)
         Me.tpgModule4.Location = New System.Drawing.Point(4, 25)
         Me.tpgModule4.Name = "tpgModule4"
@@ -194,15 +194,15 @@ Partial Class formMain
         Me.tpgModule4.Text = "Module 4"
         Me.tpgModule4.UseVisualStyleBackColor = True
         '
-        'btnMod4Verify
+        'btnMod4Convert
         '
-        Me.btnMod4Verify.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMod4Verify.Location = New System.Drawing.Point(106, 438)
-        Me.btnMod4Verify.Name = "btnMod4Verify"
-        Me.btnMod4Verify.Size = New System.Drawing.Size(180, 58)
-        Me.btnMod4Verify.TabIndex = 7
-        Me.btnMod4Verify.Text = "Convert"
-        Me.btnMod4Verify.UseVisualStyleBackColor = True
+        Me.btnMod4Convert.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMod4Convert.Location = New System.Drawing.Point(106, 438)
+        Me.btnMod4Convert.Name = "btnMod4Convert"
+        Me.btnMod4Convert.Size = New System.Drawing.Size(180, 58)
+        Me.btnMod4Convert.TabIndex = 7
+        Me.btnMod4Convert.Text = "Convert"
+        Me.btnMod4Convert.UseVisualStyleBackColor = True
         '
         'tbxMod4Input
         '
@@ -248,6 +248,6 @@ Partial Class formMain
     Friend WithEvents btnMod1Convert As Button
     Friend WithEvents btnMod3Verify As Button
     Friend WithEvents tbxMod3Input As TextBox
-    Friend WithEvents btnMod4Verify As Button
+    Friend WithEvents btnMod4Convert As Button
     Friend WithEvents tbxMod4Input As TextBox
 End Class
